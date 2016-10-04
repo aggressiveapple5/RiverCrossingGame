@@ -42,6 +42,7 @@ public class WolfGoatCabbage
 	/**
 	* Simple welcome message with the directions
 	* of the game printed on the screen.
+	* @param none
 	*/
 	
 	public static void directions()
@@ -54,6 +55,11 @@ public class WolfGoatCabbage
 		System.out.println("goat.");
 	}
 
+	/**
+	* Displays a visual representation
+	* of what is going on in the game.
+	* @param none
+	*/
 	public static void displayGameStatus()
 	{
 		String bank0 = "";
@@ -83,6 +89,11 @@ public class WolfGoatCabbage
 		System.out.println(bank1);
 	}
 
+	/**
+	* Contains the code for running the game
+	* including the user input section
+	* @param none
+	*/
 	public static void game()
 	{
 		Scanner keyboard = new Scanner(System.in);
