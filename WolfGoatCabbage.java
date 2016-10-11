@@ -98,8 +98,8 @@ public class WolfGoatCabbage
 	{
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.println("What would you like to move across the river? ");
-		String userMove = keyboard.nextLine();
+		System.out.println("What would you like to move across the river? (C, G, H, W) ");
+		String userMove = screenUserInput(keyboard);
 		
 		if (userMove.equals("H"))
 		{
@@ -189,6 +189,24 @@ public class WolfGoatCabbage
 	
 	}
 
+	public static String screenUserInput(Scanner kb)
+	{
+		String input = kb.nextLine();
+		if (input.length() > 1)
+		{
+			System.out.println("Your input length is greater than 1.");
+			System.out.println("Please re-enter a valid input: ");
+			return screenUserInput(kb);
+		}
+		else if (!input.equals("C") && !input.equals("H") && !input.equals("G") && !input.equals("W"))
+		{
+			System.out.println("That is not one of the four options.");
+			System.out.println("Please re-enter a valid input: ");
+			return screenUserInput(kb);
+		}
+		return input;
+	
+	}
 
 
 
