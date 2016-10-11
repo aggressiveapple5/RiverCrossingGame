@@ -188,6 +188,10 @@ public class WolfGoatCabbage
 	
 	
 	}
+	/**
+	* error checker using recursion
+	* @param a scanner
+	*/
 
 	public static String screenUserInput(Scanner kb)
 	{
